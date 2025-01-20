@@ -12,7 +12,11 @@ def hello():
 
 @app.route('/get-transcript/<video_id>')
 def get_transcript(video_id):
-
+    for i in range(400000000):
+        ...
+    return jsonify({
+        "asdf":"afg"
+    })
     try:
         transcript = get_video_transcript(f"https://www.youtube.com/watch?v={video_id}")
         return jsonify({"transcript": transcript})
