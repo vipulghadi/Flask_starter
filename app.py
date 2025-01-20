@@ -10,7 +10,7 @@ def home():
 def hello():
     return jsonify({"message": "Hello, world!"})
 
-@app.route('/get-transcript/<video_id>/')
+@app.route('/get-transcript/<video_id>')
 def get_transcript(video_id):
 
     try:
